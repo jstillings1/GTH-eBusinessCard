@@ -1,0 +1,15 @@
+"https://quickchart.io/qr?text=" & "BEGIN:VCARD
+VERSION:4.0
+PRODID:-//experience.digital//EN" &
+"N:" & Office365Users.MyProfile().GivenName & Char(10) & 
+"LN:" & Office365Users.MyProfile().Surname & Char(10) & 
+"FN:" & Office365Users.MyProfile().DisplayName & Char(10) &
+"EMAIL:"& Office365Users.MyProfile().Mail & Char(10) &
+"ORG:" & Office365Users.MyProfileV2().companyName & Char(10) &
+"TITLE" & Office365Users.MyProfileV2().department & Char(10) &
+"ROLE" & Office365Users.MyProfileV2().jobTitle & Char(10) &
+"TEL;VALUE=uri;PREF=1;TYPE=voice:" & "(931)771-2682" & Char(10) &
+"TEL;VALUE=uri;TYPE=text,voice,cell:" & Office365Users.MyProfileV2().mobilePhone & Char(10) & 
+"ADR:" & Office365Users.MyProfileV2().streetAddress & ";" & Office365Users.MyProfileV2().city & ";" & Office365Users.MyProfileV2().state & ";" &Office365Users.MyProfileV2().country & ";" & Office365Users.MyProfileV2().postalCode & Char(10) &
+"URL:" & "https://gthministries.org" & Char(10) &
+"END:VCARD"
